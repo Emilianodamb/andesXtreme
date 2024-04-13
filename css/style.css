@@ -45,6 +45,9 @@ p {
 ul {
     list-style-type: none;
     display: flex;
+    flex-flow: wrap;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 header {
@@ -79,12 +82,13 @@ footer {
     background-color: rgba(0, 0, 0, 0.33);
     display: flex;
     justify-content: space-between;
-    flex-flow: row nowrap;
+    align-items: center;
+    flex-flow: wrap;
 }
 
 .menu-nav-bar-container {
     display: flex;
-    align-items: center;
+    flex-flow: row wrap;
 }
 
 .log-nav-bar-container {
