@@ -9,13 +9,6 @@
     src: url(../fonts/Rosario-VariableFont_wght.ttf);
 }
 
-@media screen and (min-width: 480px){
-    body{
-        
-    }
-}
-
-
 body {
     width: 100%;
     font-family: "Rosario";
@@ -52,9 +45,6 @@ p {
 ul {
     list-style-type: none;
     display: flex;
-    flex-flow: wrap;
-    margin-bottom: 0;
-    padding-left: 0;
 }
 
 header {
@@ -62,7 +52,6 @@ header {
 }
 
 footer {
-    margin-top: 30px;
     padding: 10px;
     align-content: center;
     height: 70px;
@@ -87,20 +76,15 @@ footer {
 .nav-bar-container {
     color: rgb(255, 254, 231);
     padding: 15px;
-    margin-left: 0;
-    margin-right: 0;
     background-color: rgba(0, 0, 0, 0.33);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-flow: wrap;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    flex-flow: row nowrap;
 }
 
 .menu-nav-bar-container {
     display: flex;
-    flex-flow: row wrap;
+    align-items: center;
 }
 
 .log-nav-bar-container {
@@ -157,19 +141,17 @@ a {
 
 .actividad-container,
 .beneficio-container {
-    display: grid;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 100%;
+    margin: 20px;
     padding: 5%;
     background-color: white;
     text-align: center;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.358) 2px 2px 2px 2px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.75fr 0.25fr;
-    grid-template-areas: 
-    "img-container"
-    "descripcion-container"
-    "button-container";
 }
 
 .form-container {
@@ -182,22 +164,19 @@ a {
     border-radius: 15px;
 }
 
+.actividades-container,
+.beneficios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: 10%;
+    margin-bottom: 5%;
+}
 
 .img-actividad-container,
 .img-beneficio-container {
     width: 100%;
-    grid-area: img-container;
-    justify-self: center;
-    align-content: center;
-}
-
-.descripcion-container{
-    grid-area: descripcion-container;
-    margin-top: 10px;
-}
-
-.button-container{
-    grid-area: button-container;
+    align-items: center;
 }
 
 .iframe-spotify {
@@ -241,11 +220,6 @@ legend {
     text-shadow: rgba(227, 170, 179, 0.588) 0.5px 0.5px;
 }
 
-.actividades-container{
-    height: 100%;
-    width: 100%;
-}
-
 .actividad-container h3,
 .actividad-container p,
 .beneficio-container h3,
@@ -254,14 +228,9 @@ legend {
 }
 
 .lista-actividades {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
-}
-
-.elemento{
-    grid-area: elemento;
+    display: flex;
+    align-content: center;
+    align-items: stretch;
 }
 
 .login {
