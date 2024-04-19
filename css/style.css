@@ -45,6 +45,9 @@ p {
 ul {
     list-style-type: none;
     display: flex;
+    flex-flow: wrap;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 header {
@@ -52,6 +55,7 @@ header {
 }
 
 footer {
+    margin-top: 30px;
     padding: 10px;
     align-content: center;
     height: 70px;
@@ -76,15 +80,20 @@ footer {
 .nav-bar-container {
     color: rgb(255, 254, 231);
     padding: 15px;
+    margin-left: 0;
+    margin-right: 0;
     background-color: rgba(0, 0, 0, 0.33);
     display: flex;
     justify-content: space-between;
-    flex-flow: row nowrap;
+    align-items: center;
+    flex-flow: wrap;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .menu-nav-bar-container {
     display: flex;
-    align-items: center;
+    flex-flow: row wrap;
 }
 
 .log-nav-bar-container {
@@ -141,17 +150,22 @@ a {
 
 .actividad-container,
 .beneficio-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 250px;
+    display: grid;
+    width: 100%;
     height: 100%;
-    margin: 20px;
     padding: 5%;
     background-color: white;
     text-align: center;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.358) 2px 2px 2px 2px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.75fr 0.25fr;
+    grid-template-areas: 
+    "img-container"
+    "descripcion-container"
+    "button-container";
+
+    font-size: 1rem;
 }
 
 .form-container {
@@ -164,19 +178,24 @@ a {
     border-radius: 15px;
 }
 
-.actividades-container,
-.beneficios-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-inline: 10%;
-    margin-bottom: 5%;
-}
 
 .img-actividad-container,
 .img-beneficio-container {
     width: 100%;
-    align-items: center;
+    grid-area: img-container;
+    justify-self: center;
+    align-content: center;
+}
+
+.descripcion-container{
+    grid-area: descripcion-container;
+    margin-top: 10px;
+}
+
+.button-container{
+    display: flex;
+    grid-area: button-container;
+    justify-content: center;
 }
 
 .iframe-spotify {
@@ -220,17 +239,24 @@ legend {
     text-shadow: rgba(227, 170, 179, 0.588) 0.5px 0.5px;
 }
 
+.actividades-container{
+    height: 100%;
+    width: 100%;
+    padding: 3vw;
+}
+
 .actividad-container h3,
 .actividad-container p,
 .beneficio-container h3,
 .beneficio-container p {
-    font-size: 100%;
 }
 
 .lista-actividades {
     display: flex;
-    align-content: center;
-    align-items: stretch;
+}
+
+.elemento{
+    grid-area: elemento;
 }
 
 .login {
