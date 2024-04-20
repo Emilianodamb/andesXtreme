@@ -148,7 +148,7 @@ a {
     margin-top: 20px; /* Ajusta el margen superior según sea necesario */
 }
 
-.saber-mas-button {
+.saber-mas-button, .saber-mas-button:hover {
     align-self: center;
     width: 50%;
     height: 80%;
@@ -310,6 +310,6 @@ legend {
     grid-area: elemento;
 }
 
-.login {
-    padding: 10px;
+.img-modal{
+    width: 100%;
 }

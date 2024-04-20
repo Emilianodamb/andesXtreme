@@ -53,7 +53,7 @@
                             <p>Senderismo, trekking, mountain bike, escalada, rapel y paracaidismo</p>
                         </div>
                         <div class="button-container">
-                            <button class="saber-mas-button">
+                            <button type="button" class="btn btn-primary saber-mas-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Ver mas
                             </button>
                         </div>
@@ -71,7 +71,7 @@
                             <p>Kayak, bicicletas de agua, rafting, windsurf, kitesurf y remo</p>
                         </div>
                         <div class="button-container">
-                            <button class="saber-mas-button">
+                            <button type="button" class="btn btn-primary saber-mas-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Ver mas
                             </button>
                         </div>
@@ -89,7 +89,7 @@
                             <p>Canopy, tirolesa, safaris fotográficos, cabalgatas y buceo</p>
                         </div>
                         <div class="button-container">
-                            <button class="saber-mas-button">
+                            <button type="button" class="btn btn-primary saber-mas-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Ver mas
                             </button>
                         </div>
@@ -107,7 +107,7 @@
                             <p>Esquí y snowboard</p>
                         </div>
                         <div class="button-container">
-                            <button class="saber-mas-button">
+                            <button type="button" class="btn btn-primary saber-mas-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Ver mas
                             </button>
                         </div>
@@ -121,9 +121,27 @@
 
     <footer>
         <div>
-            <h5>Creado por Emiliano D'Ambrosio en HTML5</h5>
+            <h2>Creado por Emiliano D'Ambrosio en HTML5</h2>
         </div>
     </footer>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Actividades de montaña</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/aconcagua-cruz.jpg" alt="actividades de montania" class="img-modal p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, consequuntur neque mollitia facere necessitatibus cumque magnam aspernatur, repellat distinctio nam debitis praesentium, amet assumenda dicta itaque quo adipisci dolores ipsam deleniti labore suscipit odit. Voluptas cupiditate a soluta eligendi consequatur obcaecati, libero, magnam saepe dolores maxime nobis pariatur reiciendis accusantium at recusandae et delectus accusamus mollitia quia temporibus? Aperiam odit ex voluptatibus, id quas, labore veritatis voluptatem, vero quibusdam animi nulla quo. Reprehenderit sint modi omnis eum placeat, nisi eius praesentium ipsum sed repudiandae, dolore debitis ratione necessitatibus voluptatibus a dolorem sequi id ipsa totam sunt! Accusantium corrupti cumque reiciendis.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary m-auto" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
