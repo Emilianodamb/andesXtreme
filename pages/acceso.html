@@ -25,17 +25,39 @@
         </div>
     </header>
 
-    <main>
-        <h1 class="p-2">Inicia sesión</h1>
-        <div class="form-container">
-            <form>
-                <input type="text" name="username" placeholder="Nombre de usuario" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
-                <br>
-                <button>Iniciar sesión</button>
-                <button><a href="./registro.html">Registrarse</a></button>
-                <a href="">Olvidé mi contraseña</a>
-            </form>
+    <main class="row">
+        <div class="welcome-text-container m-auto mt-3">
+            <h1 class="p-2"><strong>Inicia sesión</strong></h1>
+            <div class="form-container m-auto mb-4 mt-4 p-3">
+                <form action="" id="">
+                    <div class="form">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Nombre de usuario" name="username" autocomplete="name" required
+                                    aria-label="Nombre de usuario">
+                            </div>
+                            <div class="col--12">
+                                <input type="password" class="form-control" placeholder="Contraseña" name="password" required
+                                    aria-label="Contraseña">
+                            </div>
+                            
+                            <div class="row mt-3 m-auto acceso">
+                                <div class="col-8 mb-2 mx-auto">
+                                    <input type="submit" class="btn btn-primary form-control" 
+                                      value="Iniciar sesión">
+                                </div>
+
+                                <div class="d-grid gap-2 col-8 mx-auto">
+                                    <button class="btn btn-success" type="button"><a href="./registro.html">Registrarse</a></button>
+                                    <button type="button" class="btn btn-link">
+                                        <a href="">Olvidé mi contraseña</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
