@@ -1,3 +1,7 @@
+.modal .modal-dialog .modal-content .modal-body .img-modal {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,10 +20,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-body header {
+
+header {
   width: 100%;
 }
-body header .nav-bar-container {
+header .nav-bar-container {
   color: rgb(255, 254, 231);
   padding: 15px;
   margin-left: 0;
@@ -32,18 +37,18 @@ body header .nav-bar-container {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-body header .nav-bar-container .menu-nav-bar-container {
+header .nav-bar-container .menu-nav-bar-container {
   display: flex;
   flex-flow: row wrap;
 }
-body header .nav-bar-container .menu-nav-bar-container ul {
+header .nav-bar-container .menu-nav-bar-container ul {
   list-style-type: none;
   display: flex;
   flex-flow: wrap;
   margin-bottom: 0;
   padding-left: 0;
 }
-body header .nav-bar-container .menu-nav-bar-container ul li a {
+header .nav-bar-container .menu-nav-bar-container ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin: 5px;
@@ -54,18 +59,18 @@ body header .nav-bar-container .menu-nav-bar-container ul li a {
   font-weight: 600;
   text-shadow: 1px 1px rgb(0, 0, 0);
 }
-body header .nav-bar-container .log-nav-bar-container {
+header .nav-bar-container .log-nav-bar-container {
   display: flex;
   align-items: center;
 }
-body header .nav-bar-container .log-nav-bar-container ul {
+header .nav-bar-container .log-nav-bar-container ul {
   list-style-type: none;
   display: flex;
   flex-flow: wrap;
   margin-bottom: 0;
   padding-left: 0;
 }
-body header .nav-bar-container .log-nav-bar-container ul li a {
+header .nav-bar-container .log-nav-bar-container ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin: 5px;
@@ -76,7 +81,8 @@ body header .nav-bar-container .log-nav-bar-container ul li a {
   font-weight: 600;
   text-shadow: 1px 1px rgb(0, 0, 0);
 }
-body main div .andes-xtreme-logo {
+
+main div .andes-xtreme-logo {
   color: rgb(232, 10, 10);
   text-shadow: rgba(0, 0, 0, 0.411) 2px 2px;
   font-style: italic;
@@ -85,13 +91,13 @@ body main div .andes-xtreme-logo {
   margin: 2%;
   margin-bottom: 3%;
 }
-body main div .welcome-text-container h2 {
+main div .welcome-text-container h2 {
   margin: 1%;
 }
-body main div .welcome-text-container p {
+main div .welcome-text-container p {
   margin: 1%;
 }
-body main .saber-mas-box {
+main .saber-mas-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -101,7 +107,7 @@ body main .saber-mas-box {
   text-align: center;
   margin-top: 20px;
 }
-body main .saber-mas-box .saber-mas-button {
+main .saber-mas-box .saber-mas-button {
   align-self: center;
   width: 50%;
   height: 80%;
@@ -114,7 +120,7 @@ body main .saber-mas-box .saber-mas-button {
   border-radius: 10px;
   border-style: groove;
 }
-body main .saber-mas-box .saber-mas-button:hover {
+main .saber-mas-box .saber-mas-button:hover {
   align-self: center;
   width: 50%;
   height: 80%;
@@ -127,7 +133,7 @@ body main .saber-mas-box .saber-mas-button:hover {
   border-radius: 10px;
   border-style: groove;
 }
-body main .saber-mas-box .saber-mas-button a {
+main .saber-mas-box .saber-mas-button a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin: 5px;
@@ -138,100 +144,17 @@ body main .saber-mas-box .saber-mas-button a {
   font-weight: 600;
   text-shadow: 1px 1px rgb(0, 0, 0);
 }
-body main .spotify {
+main .spotify {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-body main .spotify .iframe-spotify {
+main .spotify .iframe-spotify {
   width: 70%;
   min-width: 270px;
 }
-body footer {
-  margin-top: 30px;
-  padding: 10px;
-  align-content: center;
-  height: 70px;
-  background-color: rgb(14, 13, 13);
-  color: rgb(252, 251, 237);
-}
-body footer div h2 {
-  margin: 1%;
-}
 
-body {
-  width: 100%;
-  font-family: "Rosario";
-  text-shadow: rgba(227, 170, 179, 0.588) 0.5px 0.5px;
-  background-image: url(../images/fondo-hd.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-}
-body header {
-  width: 100%;
-}
-body header .nav-bar-container {
-  color: rgb(255, 254, 231);
-  padding: 15px;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: rgba(0, 0, 0, 0.33);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: wrap;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-body header .nav-bar-container .menu-nav-bar-container {
-  display: flex;
-  flex-flow: row wrap;
-}
-body header .nav-bar-container .menu-nav-bar-container ul {
-  list-style-type: none;
-  display: flex;
-  flex-flow: wrap;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-body header .nav-bar-container .menu-nav-bar-container ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  margin: 5px;
-  padding: 5px;
-  border: 0px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 3px;
-  font-weight: 600;
-  text-shadow: 1px 1px rgb(0, 0, 0);
-}
-body header .nav-bar-container .log-nav-bar-container {
-  display: flex;
-  align-items: center;
-}
-body header .nav-bar-container .log-nav-bar-container ul {
-  list-style-type: none;
-  display: flex;
-  flex-flow: wrap;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-body header .nav-bar-container .log-nav-bar-container ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  margin: 5px;
-  padding: 5px;
-  border: 0px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 3px;
-  font-weight: 600;
-  text-shadow: 1px 1px rgb(0, 0, 0);
-}
-body main .welcome-text-container {
+main .welcome-text-container {
   padding: 1%;
   margin: 1%;
   margin-top: 2%;
@@ -242,25 +165,25 @@ body main .welcome-text-container {
   border-radius: 20px;
   font-weight: 600;
 }
-body main .welcome-text-container h1 {
+main .welcome-text-container h1 {
   margin: 1%;
 }
-body main .welcome-text-container p {
+main .welcome-text-container p {
   margin: 1%;
   padding: 1%;
   font-size: 1.5em;
 }
-body main .actividades-container {
+main .actividades-container {
   height: 100%;
   width: 100%;
 }
-body main .actividades-container .lista-actividades {
+main .actividades-container .lista-actividades {
   list-style-type: none;
   display: flex;
   flex-flow: wrap;
   margin-bottom: 0;
 }
-body main .actividades-container .lista-actividades li .actividad-container {
+main .actividades-container .lista-actividades li .actividad-container {
   display: grid;
   width: 100%;
   height: 100%;
@@ -273,37 +196,37 @@ body main .actividades-container .lista-actividades li .actividad-container {
   grid-template-rows: auto 1.5fr 0.5fr;
   grid-template-areas: "img-container" "descripcion-container" "button-container";
 }
-body main .actividades-container .lista-actividades li .actividad-container .img-actividad-container {
+main .actividades-container .lista-actividades li .actividad-container .img-actividad-container {
   width: 100%;
   grid-area: img-container;
   justify-self: center;
   align-content: start;
 }
-body main .actividades-container .lista-actividades li .actividad-container .img-actividad-container .img-act {
+main .actividades-container .lista-actividades li .actividad-container .img-actividad-container .img-act {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
-body main .actividades-container .lista-actividades li .actividad-container .descripcion-container {
+main .actividades-container .lista-actividades li .actividad-container .descripcion-container {
   grid-area: descripcion-container;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-body main .actividades-container .lista-actividades li .actividad-container .descripcion-container h3 {
+main .actividades-container .lista-actividades li .actividad-container .descripcion-container h3 {
   font-size: 1rem;
 }
-body main .actividades-container .lista-actividades li .actividad-container .descripcion-container p {
+main .actividades-container .lista-actividades li .actividad-container .descripcion-container p {
   font-size: 1rem;
   margin: 1%;
   padding: 1%;
 }
-body main .actividades-container .lista-actividades li .actividad-container .button-container {
+main .actividades-container .lista-actividades li .actividad-container .button-container {
   display: flex;
   flex-wrap: wrap;
   grid-area: button-container;
   justify-content: center;
   align-content: flex-end;
 }
-body main .actividades-container .lista-actividades li .actividad-container .button-container button {
+main .actividades-container .lista-actividades li .actividad-container .button-container button {
   align-self: center;
   width: 50%;
   height: 80%;
@@ -316,7 +239,7 @@ body main .actividades-container .lista-actividades li .actividad-container .but
   border-radius: 10px;
   border-style: groove;
 }
-body main .actividades-container .lista-actividades li .actividad-container .button-container button:hover {
+main .actividades-container .lista-actividades li .actividad-container .button-container button:hover {
   align-self: center;
   width: 50%;
   height: 80%;
@@ -328,22 +251,19 @@ body main .actividades-container .lista-actividades li .actividad-container .but
   border: 3px brown solid;
   border-radius: 10px;
   border-style: groove;
-}
-body .modal .modal-dialog .modal-content .modal-body .img-modal {
-  width: 100%;
 }
 
-body main .beneficios-container {
+main .beneficios-container {
   flex-direction: row;
   justify-content: center;
 }
-body main .beneficios-container .lista-actividades {
+main .beneficios-container .lista-actividades {
   list-style-type: none;
   display: flex;
   flex-flow: wrap;
   margin-bottom: 0;
 }
-body main .beneficios-container .lista-actividades li .beneficio-container {
+main .beneficios-container .lista-actividades li .beneficio-container {
   display: grid;
   width: 100%;
   height: 100%;
@@ -356,48 +276,60 @@ body main .beneficios-container .lista-actividades li .beneficio-container {
   grid-template-rows: auto 1fr;
   grid-template-areas: "img-container" "descripcion-container";
 }
-body main .beneficios-container .lista-actividades li .beneficio-container .img-beneficio-container {
+main .beneficios-container .lista-actividades li .beneficio-container .img-beneficio-container {
   width: 100%;
   grid-area: img-container;
   justify-self: center;
   align-content: start;
 }
-body main .beneficios-container .lista-actividades li .beneficio-container .img-beneficio-container .img-act {
+main .beneficios-container .lista-actividades li .beneficio-container .img-beneficio-container .img-act {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
-body main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container {
+main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container {
   grid-area: descripcion-container;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-body main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container h3 {
+main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container h3 {
   font-size: 1.5rem;
 }
-body main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container p {
+main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container p {
   font-size: 1rem;
 }
 
-body main .iframe-container {
+main .iframe-container {
   display: flex;
   justify-content: center;
   padding: 20px;
   border-radius: 25px;
 }
-body main .iframe-container .iframe-map {
+main .iframe-container .iframe-map {
   width: 100%;
 }
 
-body main .welcome-text-container .form-container {
+main .welcome-text-container .form-container {
   width: 80%;
   background-color: white;
   margin-top: 10%;
   border-radius: 15px;
 }
 
-body main div div form div div div.row.mt-3.m-auto.acceso div.d-grid.gap-2.col-8.mx-auto button.btn.btn-success a {
+main div div form div div div.row.mt-3.m-auto.acceso div.d-grid.gap-2.col-8.mx-auto button.btn.btn-success a {
   color: white;
   text-decoration: none;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  align-content: center;
+  height: 70px;
+  background-color: rgb(14, 13, 13);
+  color: rgb(252, 251, 237);
+}
+footer div h2 {
+  margin: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */
