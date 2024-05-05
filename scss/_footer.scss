@@ -1,3 +1,10 @@
+@keyframes acentuar {
+    50%{
+        transform: translate(0px, -3px);
+    }
+}
+
+
 .footer{
     width: 100%;
     display: flex;
@@ -30,10 +37,22 @@
         ul{
             display: flex;
             list-style-type: none;
-            gap: 3px;
+            gap: 5px;
             justify-content: flex-end;
             padding-left: 0;
             li{
+                a{
+                    color: rgb(252, 251, 237);
+                    svg{
+                        &:hover{
+                            animation-duration: .5s;
+                            animation-name: acentuar;
+                        }
+                        &:visited{
+                            color: rgb(252, 251, 237);
+                        }
+                    }
+                }
             }
         }
     }
