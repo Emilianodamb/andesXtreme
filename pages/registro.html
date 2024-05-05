@@ -17,30 +17,33 @@
 
 <body class="container">
     <header>
-        <div class="nav-bar-container">
-            <div class="logo-nav-bar-container m-auto">
-                <h1 class="andes-xtreme-logo"><strong>Andes Xtreme</strong></h1>
+        <nav class="nav-bar-container navbar navbar-expand-lg navbar-light border-bottom">
+            <div class="container-fluid">
+                <div class="logo-nav-bar-container">
+                    <a href="../index.html" class="navbar-brand logo"><strong>Andes Xtreme</strong></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="MenuNavegacion" class="collapse navbar-collapse menu-nav-bar-container m-auto">
+                    <ul class="navbar-nav menu-navbar m-auto">
+                        <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a href="./actividades.html">Actividades</a></li>
+                        <li class="nav-item"><a href="./beneficios.html">Beneficios</a></li>
+                        <li class="nav-item"><a href="./quienes-somos.html">¿Quienes somos?</a></li>
+                        <li class="nav-item"><a href="./contactanos.html">Contactanos</a></li>
+                    </ul>
+                    <ul class="navbar-nav log-navbar m-auto">
+                        <li class="nav-item"><a href="./registro.html">Registrarse</a></li>
+                        <li class="nav-item"><a href="./acceso.html">Iniciar sesión</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu-nav-bar-container m-auto">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./actividades.html">Actividades</a></li>
-                    <li><a href="./beneficios.html">Beneficios</a></li>
-                    <li><a href="./quienes-somos.html">¿Quienes somos?</a></li>
-                    <li><a href="./contactanos.html">Contactanos</a></li>
-                </ul>
-            </div>
-            <div class="log-nav-bar-container m-auto">
-                <ul>
-                    <li><a href="./registro.html">Registrarse</a></li>
-                    <li><a href="./acceso.html">Iniciar sesión</a></li>
-                </ul>
-            </div>
-        </div>
+        </nav> 
     </header>
 
     <main>
-        <div class="welcome-text-container">
+        <div class="welcome-text-container m-auto mt-4">
             <div>
                 <h1 class="p-2"><strong>¡Registrate y comienza a vivir la aventura!</strong></h1>
                 <p class="p-2">Sólo toma un minuto</p>
