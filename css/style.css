@@ -384,16 +384,43 @@ main div div form div div div.row.mt-3.m-auto.acceso div.d-grid.gap-2.col-8.mx-a
   text-decoration: none;
 }
 
-footer {
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
   padding: 10px;
   align-content: center;
-  height: 70px;
   background-color: rgb(14, 13, 13);
   color: rgb(252, 251, 237);
+  font-size: 0.75rem;
 }
-footer div h2 {
+.footer .creado {
+  display: flex;
+  justify-content: center;
+}
+.footer .creado p {
+  text-align: center;
   margin: 1%;
+}
+.footer .derechos {
+  display: flex;
+  justify-content: center;
+}
+.footer .derechos p {
+  text-align: center;
+  margin: 1%;
+}
+.footer .redes {
+  display: flex;
+  justify-content: center;
+}
+.footer .redes ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3px;
+  justify-content: flex-end;
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

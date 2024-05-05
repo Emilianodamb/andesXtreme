@@ -1,13 +1,40 @@
-footer {
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
     padding: 10px;
     align-content: center;
-    height: 70px;
     background-color: rgb(14, 13, 13);
     color: rgb(252, 251, 237);
-    div {
-        h2 {
+    font-size: 0.75rem;
+    .creado{
+        display: flex;
+        justify-content: center;
+        p{
+            text-align: center;
             margin: 1%;
+        }
+    }
+    .derechos{
+        display: flex;
+        justify-content: center;
+        p{
+            text-align: center;
+            margin: 1%;
+        }
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 3px;
+            justify-content: flex-end;
+            padding-left: 0;
+            li{
+            }
         }
     }
 }
