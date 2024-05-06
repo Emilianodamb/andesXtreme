@@ -3,7 +3,32 @@
         .nav-bar-container{
             .container-fluid{
                 .logo-nav-bar-container{
+                    display: flex;
                     width: 100%;
+                    justify-content: space-between;
+                    padding: 10px;
+                    a{
+                        justify-self: flex-start;
+                    }
+                    button{
+                        justify-self: flex-end;
+                    }
+                }
+                .menu-nav-bar-container{
+                    .menu-navbar{
+                        padding: 10px;
+                        li{
+                            width: 100%;
+                        }
+                    }
+                    .log-navbar{
+                        text-align: center;
+                        width: 100%;
+                        padding: 10px;
+                        li{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -13,11 +38,16 @@
             .container-fluid{
                 .menu-nav-bar-container{
                     .menu-navbar{
+                        padding: 10px;
                         text-align: center;
-                        padding: 15px;
                     }
                     .log-navbar{
                         text-align: center;
+                        width: 100%;
+                        padding: 10px;
+                        li{
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -34,18 +64,18 @@ header{
         justify-content: center;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
+        padding: 0;
         .container-fluid{
             width: 100%;
             .logo-nav-bar-container{
-                display: flex;
                 justify-content: space-between;
+                margin-left: 1%;
                 a{
                     color: rgb(255, 13, 13);
                     text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
                     font-style: italic;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     font-weight: 600;
-                    margin: 1%;
                     padding: 1%;
                     justify-self: center;
                     align-self: center;
@@ -55,27 +85,29 @@ header{
                         color: rgb(255, 13, 13);
                         text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
                         font-style: italic;
-                        font-size: 2rem;
                         font-weight: 600;
                     }
                 }
                 button{
                     height: 80%;
-                    align-self: center;
+                    align-content: flex-end;
                 }
             }
             .menu-nav-bar-container{
                 width: 80%;
+                justify-content: space-between;
+                padding: 0;
+                height: auto;
                 gap: 15px;
-                margin: 1%;
-                padding: 1%;
+                margin-left: 1%;
                 .menu-navbar{
-                    width: 80%;
+                    width: 90%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
                     gap: 2px;
-                    margin: 1%;
                     li{
+                        height: 3rem;
+                        align-content: center;
                         a{
                             color: rgb(255, 255, 255);
                             text-decoration: none;
@@ -92,12 +124,14 @@ header{
                     }
                 }
                 .log-navbar{
-                    width: 30%;
+                    width: 50%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-end;
                     gap: 2px;
-                    margin: 2%;
                     li{
+                        text-align: center;
+                        height: 3rem;
+                        align-content: center;
                         a{
                             color: rgb(255, 255, 255);
                             text-decoration: none;
@@ -106,6 +140,7 @@ header{
                             border-radius: 3px;
                             text-shadow: 1px 1px rgb(0, 0, 0);
                             font-size: 1rem;
+                            width: fit-content;
                             &:hover{
                                 background-color: rgba(0, 27, 146, 0.336);
                                 border-radius: 30%;
@@ -123,12 +158,18 @@ header{
     .nav-bar-container{
         width: 100%;
         justify-content: space-evenly;
+        color: rgb(255, 254, 231);
+        background-color: rgba(0, 0, 0, 0.33);
+        align-items: center;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 0;
         .container-fluid{
             width: 100%;
             justify-content: center;
             .logo-nav-bar-container{
-                width:auto;
-                justify-content: center;
+                width: auto;
+                justify-content: space-between;
                 a{
                     &:hover{
                     }
@@ -136,11 +177,21 @@ header{
             }
             .menu-nav-bar-container{
                 justify-content: space-between;
+                padding: 0;
+                height: auto;
+                gap: 15px;
                 .menu-navbar{
                     justify-content: flex-start;
+                    li{
+                        height: 3rem;
+                    }
                 }
                 .log-navbar{
                     justify-content: flex-end;
+                    width: 50%;
+                    li{
+                        height: 3rem;
+                    }
                 }
             }
         }

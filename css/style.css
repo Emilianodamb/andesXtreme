@@ -23,14 +23,42 @@ body {
 
 @media (max-width: 991px) {
   header .nav-bar-container .container-fluid .logo-nav-bar-container {
+    display: flex;
     width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  header .nav-bar-container .container-fluid .logo-nav-bar-container a {
+    justify-self: flex-start;
+  }
+  header .nav-bar-container .container-fluid .logo-nav-bar-container button {
+    justify-self: flex-end;
   }
   header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar {
-    text-align: center;
-    padding: 15px;
+    padding: 10px;
+  }
+  header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar li {
+    width: 100%;
   }
   header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar {
     text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar li {
+    width: 100%;
+  }
+  header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar {
+    padding: 10px;
+    text-align: center;
+  }
+  header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar li {
+    width: 100%;
   }
 }
 header {
@@ -43,21 +71,21 @@ header .nav-bar-container {
   justify-content: center;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  padding: 0;
 }
 header .nav-bar-container .container-fluid {
   width: 100%;
 }
 header .nav-bar-container .container-fluid .logo-nav-bar-container {
-  display: flex;
   justify-content: space-between;
+  margin-left: 1%;
 }
 header .nav-bar-container .container-fluid .logo-nav-bar-container a {
   color: rgb(255, 13, 13);
   text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin: 1%;
   padding: 1%;
   justify-self: center;
   align-self: center;
@@ -68,25 +96,29 @@ header .nav-bar-container .container-fluid .logo-nav-bar-container a:hover {
   color: rgb(255, 13, 13);
   text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
   font-style: italic;
-  font-size: 2rem;
   font-weight: 600;
 }
 header .nav-bar-container .container-fluid .logo-nav-bar-container button {
   height: 80%;
-  align-self: center;
+  align-content: flex-end;
 }
 header .nav-bar-container .container-fluid .menu-nav-bar-container {
   width: 80%;
+  justify-content: space-between;
+  padding: 0;
+  height: auto;
   gap: 15px;
-  margin: 1%;
-  padding: 1%;
+  margin-left: 1%;
 }
 header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar {
-  width: 80%;
+  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2px;
-  margin: 1%;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar li {
+  height: 3rem;
+  align-content: center;
 }
 header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar li a {
   color: rgb(255, 255, 255);
@@ -102,11 +134,15 @@ header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar 
   border-radius: 30%;
 }
 header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar {
-  width: 30%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 2px;
-  margin: 2%;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar li {
+  text-align: center;
+  height: 3rem;
+  align-content: center;
 }
 header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar li a {
   color: rgb(255, 255, 255);
@@ -116,6 +152,7 @@ header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar l
   border-radius: 3px;
   text-shadow: 1px 1px rgb(0, 0, 0);
   font-size: 1rem;
+  width: fit-content;
 }
 header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar li a:hover {
   background-color: rgba(0, 27, 146, 0.336);
@@ -128,6 +165,12 @@ header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar l
 .index-header .nav-bar-container {
   width: 100%;
   justify-content: space-evenly;
+  color: rgb(255, 254, 231);
+  background-color: rgba(0, 0, 0, 0.33);
+  align-items: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0;
 }
 .index-header .nav-bar-container .container-fluid {
   width: 100%;
@@ -135,16 +178,26 @@ header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar l
 }
 .index-header .nav-bar-container .container-fluid .logo-nav-bar-container {
   width: auto;
-  justify-content: center;
+  justify-content: space-between;
 }
 .index-header .nav-bar-container .container-fluid .menu-nav-bar-container {
   justify-content: space-between;
+  padding: 0;
+  height: auto;
+  gap: 15px;
 }
 .index-header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar {
   justify-content: flex-start;
 }
+.index-header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar li {
+  height: 3rem;
+}
 .index-header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar {
   justify-content: flex-end;
+  width: 50%;
+}
+.index-header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar li {
+  height: 3rem;
 }
 
 main div .andes-xtreme-logo {
