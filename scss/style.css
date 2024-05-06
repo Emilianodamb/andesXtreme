@@ -1,0 +1,448 @@
+.modal .modal-dialog .modal-content .modal-body .img-modal {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Rosario";
+  text-shadow: rgba(227, 170, 179, 0.588) 0.5px 0.5px;
+  background-image: url(../images/fondo-hd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  header .nav-bar-container .container-fluid .logo-nav-bar-container {
+    width: 100%;
+  }
+  header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar {
+    text-align: center;
+    padding: 15px;
+  }
+  header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar {
+    text-align: center;
+  }
+}
+header {
+  width: 100%;
+}
+header .nav-bar-container {
+  color: rgb(255, 254, 231);
+  background-color: rgba(0, 0, 0, 0.33);
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+header .nav-bar-container .container-fluid {
+  width: 100%;
+}
+header .nav-bar-container .container-fluid .logo-nav-bar-container {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-bar-container .container-fluid .logo-nav-bar-container a {
+  color: rgb(255, 13, 13);
+  text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1%;
+  padding: 1%;
+  justify-self: center;
+  align-self: center;
+}
+header .nav-bar-container .container-fluid .logo-nav-bar-container a:hover {
+  animation-duration: 1s;
+  animation-name: acentuar;
+  color: rgb(255, 13, 13);
+  text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 600;
+}
+header .nav-bar-container .container-fluid .logo-nav-bar-container button {
+  height: 80%;
+  align-self: center;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container {
+  width: 80%;
+  gap: 15px;
+  margin: 1%;
+  padding: 1%;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin: 1%;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+  font-size: 1rem;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar li a:hover {
+  background-color: rgba(0, 27, 146, 0.336);
+  border-radius: 30%;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin: 2%;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+  font-size: 1rem;
+}
+header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar li a:hover {
+  background-color: rgba(0, 27, 146, 0.336);
+  border-radius: 30%;
+}
+
+.index-header {
+  width: 100%;
+}
+.index-header .nav-bar-container {
+  width: 100%;
+  justify-content: space-evenly;
+}
+.index-header .nav-bar-container .container-fluid {
+  width: 100%;
+  justify-content: center;
+}
+.index-header .nav-bar-container .container-fluid .logo-nav-bar-container {
+  width: auto;
+  justify-content: center;
+}
+.index-header .nav-bar-container .container-fluid .menu-nav-bar-container {
+  justify-content: space-between;
+}
+.index-header .nav-bar-container .container-fluid .menu-nav-bar-container .menu-navbar {
+  justify-content: flex-start;
+}
+.index-header .nav-bar-container .container-fluid .menu-nav-bar-container .log-navbar {
+  justify-content: flex-end;
+}
+
+main div .andes-xtreme-logo {
+  color: rgb(255, 13, 13);
+  text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
+  font-style: italic;
+  font-size: 5rem;
+  padding-left: 1%;
+  margin: 2%;
+  margin-bottom: 3%;
+  animation-duration: 0.75s;
+}
+main div .welcome-text-container h2 {
+  margin: 1%;
+}
+main div .welcome-text-container p {
+  margin: 1%;
+}
+main .saber-mas-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+main .saber-mas-box .saber-mas-button {
+  align-self: center;
+  width: 50%;
+  height: 80%;
+  color: white;
+  margin-bottom: 5%;
+  font-weight: 600;
+  padding: 15px;
+  background-color: rgb(4, 148, 4);
+  border: 3px brown solid;
+  border-radius: 10px;
+  border-style: groove;
+}
+main .saber-mas-box .saber-mas-button:hover {
+  animation-duration: 1s;
+  animation-name: acentuar;
+  align-self: center;
+  width: 50%;
+  height: 80%;
+  color: white;
+  margin-bottom: 5%;
+  font-weight: 600;
+  padding: 15px;
+  background-color: rgb(4, 148, 4);
+  border: 3px brown solid;
+  border-radius: 10px;
+  border-style: groove;
+}
+main .saber-mas-box .saber-mas-button a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  font-weight: 600;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+main .spotify {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .spotify .iframe-spotify {
+  width: 70%;
+  min-width: 270px;
+}
+
+main .welcome-text-container {
+  padding: 1%;
+  margin: 1%;
+  margin-top: 2%;
+  margin-left: 0;
+  width: 90%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(241, 241, 241, 0.349) 0%, rgba(255, 255, 255, 0.904) 100%);
+  box-shadow: rgba(0, 0, 0, 0.358) 2px 2px 2px 2px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+main .welcome-text-container h1 {
+  margin: 1%;
+}
+main .welcome-text-container p {
+  margin: 1%;
+  padding: 1%;
+  font-size: 1.5em;
+}
+main .actividades-container {
+  height: 100%;
+  width: 100%;
+}
+main .actividades-container .lista-actividades {
+  list-style-type: none;
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 0;
+}
+main .actividades-container .lista-actividades li .actividad-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.358) 2px 2px 2px 2px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1.5fr 0.5fr;
+  grid-template-areas: "img-container" "descripcion-container" "button-container";
+}
+main .actividades-container .lista-actividades li .actividad-container .img-actividad-container {
+  width: 100%;
+  grid-area: img-container;
+  justify-self: center;
+  align-content: start;
+}
+main .actividades-container .lista-actividades li .actividad-container .img-actividad-container .img-act {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+main .actividades-container .lista-actividades li .actividad-container .descripcion-container {
+  grid-area: descripcion-container;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .actividades-container .lista-actividades li .actividad-container .descripcion-container h3 {
+  font-size: 1rem;
+}
+main .actividades-container .lista-actividades li .actividad-container .descripcion-container p {
+  font-size: 1rem;
+  margin: 1%;
+  padding: 1%;
+}
+main .actividades-container .lista-actividades li .actividad-container .button-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: button-container;
+  justify-content: center;
+  align-content: flex-end;
+}
+main .actividades-container .lista-actividades li .actividad-container .button-container button {
+  align-self: center;
+  width: 50%;
+  height: 80%;
+  color: white;
+  margin-bottom: 5%;
+  font-weight: 600;
+  padding: 15px;
+  background-color: rgb(4, 148, 4);
+  border: 3px brown solid;
+  border-radius: 10px;
+  border-style: groove;
+}
+main .actividades-container .lista-actividades li .actividad-container .button-container button:hover {
+  animation-duration: 1s;
+  animation-name: acentuar;
+  align-self: center;
+  width: 50%;
+  height: 80%;
+  color: white;
+  margin-bottom: 5%;
+  font-weight: 600;
+  padding: 15px;
+  background-color: rgb(4, 148, 4);
+  border: 3px brown solid;
+  border-radius: 10px;
+  border-style: groove;
+}
+
+main .beneficios-container {
+  flex-direction: row;
+  justify-content: center;
+}
+main .beneficios-container .lista-actividades {
+  list-style-type: none;
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 0;
+}
+main .beneficios-container .lista-actividades li .beneficio-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.358) 2px 2px 2px 2px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "img-container" "descripcion-container";
+}
+main .beneficios-container .lista-actividades li .beneficio-container .img-beneficio-container {
+  width: 100%;
+  grid-area: img-container;
+  justify-self: center;
+  align-content: start;
+}
+main .beneficios-container .lista-actividades li .beneficio-container .img-beneficio-container .img-act {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container {
+  grid-area: descripcion-container;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container h3 {
+  font-size: 1.5rem;
+}
+main .beneficios-container .lista-actividades li .beneficio-container .descripcion-container p {
+  font-size: 1rem;
+}
+
+main .iframe-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 25px;
+}
+main .iframe-container .iframe-map {
+  width: 100%;
+}
+
+main .welcome-text-container .form-container {
+  width: 80%;
+  background-color: white;
+  margin-top: 10%;
+  border-radius: 15px;
+}
+
+main div div form div div div.row.mt-3.m-auto.acceso div.d-grid.gap-2.col-8.mx-auto button.btn.btn-success a {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes acentuar {
+  50% {
+    transform: translate(0px, -3px);
+  }
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px;
+  align-content: center;
+  background-color: rgb(14, 13, 13);
+  color: rgb(252, 251, 237);
+  font-size: 0.75rem;
+}
+.footer .creado {
+  display: flex;
+  justify-content: center;
+}
+.footer .creado p {
+  text-align: center;
+  margin: 1%;
+}
+.footer .derechos {
+  display: flex;
+  justify-content: center;
+}
+.footer .derechos p {
+  text-align: center;
+  margin: 1%;
+}
+.footer .redes {
+  display: flex;
+  justify-content: center;
+}
+.footer .redes ul {
+  display: flex;
+  list-style-type: none;
+  gap: 5px;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+.footer .redes ul li a {
+  color: rgb(252, 251, 237);
+}
+.footer .redes ul li a svg:hover {
+  animation-duration: 0.5s;
+  animation-name: acentuar;
+}
+.footer .redes ul li a svg:visited {
+  color: rgb(252, 251, 237);
+}
+
+/*# sourceMappingURL=style.css.map */
