@@ -1,17 +1,23 @@
 $marron:#a52a2a; 
-$blanco: #fffde6;
+$blanco: #fffffa;
+$rojo: #ff0d0d;
+$verde-boton: #199141;
 
 main {
     div {
         .andes-xtreme-logo {
-            color: rgb(255, 13, 13);
-            text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
-            font-style: italic;
-            font-size: 5rem;
             padding-left: 1%;
             margin: 2%;
             margin-bottom: 3%;
-            animation-duration: 0.75s;
+            a{
+                color: $rojo;
+                text-shadow: rgba(0, 0, 0, 0.534) 2.5px 2.5px;
+                font-style: italic;
+                font-size: 5rem;
+                animation-duration: 0.75s;
+                text-decoration: none;
+            }
+
         }
         .welcome-text-container {
             h2 {
@@ -89,7 +95,7 @@ main {
         margin-left: 0;
         width: 90%;
         background: $blanco;
-        background: linear-gradient(0deg, rgba(241, 241, 241, 0.349) 0%, rgba(255, 255, 255, 0.904) 100%);
+        background: linear-gradient(0deg, rgba(241, 241, 241, 0.349) 0%, rgb(255, 255, 250) 100%);
         box-shadow: rgba(0, 0, 0, 0.358) 2px 2px 2px 2px;
         border-radius: 20px;
         font-weight: 600;
@@ -257,6 +263,32 @@ main {
             background-color: $blanco;
             margin-top: 10%;
             border-radius: 15px;
+            form{
+                .form{
+                    div{
+                        .botones{
+                            .reset{
+                                .btn-secondary{
+                                    background-color: #ff0d0d;
+                                    opacity: 70%;
+                                    &:hover{
+                                        opacity: 100%;
+                                    }
+                                }
+                            }
+                            .submit{
+                                .btn-primary{
+                                    background-color: #199141;
+                                    opacity: 70%;
+                                    &:hover{
+                                        opacity: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -267,8 +299,22 @@ main {
                 div{
                     div{
                         div.row.mt-3.m-auto.acceso{
-                            div.d-grid.gap-2.col-8.mx-auto{
-                                button.btn.btn-success{
+                            .login-div{
+                                .login-btn{
+                                    background-color: $verde-boton;
+                                    opacity: 70%;
+                                    &:hover{
+                                    opacity: 100%;
+                                    }
+                                }
+                            }
+                            .signin-div{
+                                .signin-btn{
+                                    background-color: rgb(82, 55, 18);
+                                    opacity: 70%;
+                                    &:hover{
+                                    opacity: 100%;
+                                    }
                                     a{
                                         color: $blanco;
                                         text-decoration: none;
@@ -278,6 +324,27 @@ main {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.botones{
+    .reset{
+        .btn-secondary{
+            background-color: #ff0d0d;
+            opacity: 70%;
+            &:hover{
+                opacity: 100%;
+            }
+        }
+    }
+    .submit{
+        .btn-primary{
+            background-color: $verde-boton;
+            opacity: 70%;
+            &:hover{
+                opacity: 100%;
             }
         }
     }
